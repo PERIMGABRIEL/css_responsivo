@@ -1,0 +1,216 @@
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.produto {
+    width: calc(25% - 20px); /* Utilizando calc para considerar a margem de 10px em cada lado */
+    margin: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Adicionando box-sizing para incluir borda e padding na largura total */
+    overflow: hidden; /* Evita que imagens diferentes afetem a altura do contêiner */
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o espaço disponível */
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sobre {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f9f9ff
+}
+.produto img {
+    width: 100px;
+    height: 100px;
+}
+
+.sobre {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.coluna-imagem {
+    width: 40%;
+    max-width: 400px;
+}
+
+.coluna-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.coluna-texto {
+    width: 50%;
+    text-align: left;
+}
+
+.sobre h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto {
+    width: 23%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.adicionar-ao-carrinho {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adicionar-ao-carrinho:hover {
+    background-color: #0056b3;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .produto {
+        width: 22%;
+    }
+
+    .produto h3 {
+        font-size: 20px;
+    }
+
+    .produto p {
+        font-size: 16px;
+    }
+
+    .adicionar-ao-carrinho {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .produtos {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .produto {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .produto h3 {
+        font-size: 18px;
+    }
+
+    .produto p {
+        font-size: 14px;
+    }
+
+    .adicionar-ao-carrinho {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .produtos {
+        flex-wrap: wrap;
+        justify-content: center;
+    } }
+
+
+    @media (max-width: 640px) {
+        header h1 {
+            font-size: 24px;
+        }
+    
+        .produto {
+            width: 100%;
+            margin: 0;
+        }
+
+        .produto h3 {
+            font-size: 18px;
+        }
+
+        .produto p {
+            font-size: 14px;
+        }
+
+        .adicionar-ao-carrinho {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
